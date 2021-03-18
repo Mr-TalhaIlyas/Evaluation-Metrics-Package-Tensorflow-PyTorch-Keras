@@ -49,7 +49,7 @@ but in this case the value 86.7% is not the accuracy over all the test data it i
 
 ### Classification Accuracy
 
-img1.png
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img1.png)
 
 Works well if there are equal number of samples belonging to each class, 
 For example:
@@ -80,7 +80,7 @@ model.compile(loss=LOSS_FUNCTION, optimizer=Adam(), metrics=['accuracy', Top_K])
 ### Confusion Matrix
 A table used to describe the performance of a classification model on a test data
 Allows easy identification of confusion between classes
-img5
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img5.png)
 Class 1 : Positive
 Class 2 : Negative
 Positive (P) : Observation is positive (for example: is an apple).
@@ -89,9 +89,9 @@ True Positive (TP) : Observation is positive, and is predicted to be positive.
 False Negative (FN) : Observation is positive, but is predicted negative.
 True Negative (TN) : Observation is negative, and is predicted to be negative.
 False Positive (FP) : Observation is negative, but is predicted positive.
-img6
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img6.png)
 
-img7
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img7.png)
 Assumes equal cost for both kinds of errors
 Does not perform well with imbalanced data 
 For this you can define a `callback` in tensorflow so that the confusion matrix is logged in you plotting pane or in the tensorboard after every epoch
@@ -196,11 +196,11 @@ confusion_matrix(y_true, y_pred)
 **Precision** effectively describes the purity of our positive detections relative to the ground truth. How many of these things were actually annotated in the ground truth of all the items we predicted in a given picture.
 Precision: Total number of correctly classified positive examples divided by the total number of predicted positive examples
 
-img2
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img2.png)
 **Recall** describes the completeness of our positive predictions relative to the ground truth. Of all of the objected annotated in our GT, how many did the network detected as positive predictions.
 Recall: Total number of correctly classified positive examples divided by the total number of positive examples
 
-img3
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img3.png)
 
 * High recall, high precision 
 Desired system 
@@ -239,11 +239,11 @@ Punishes the extreme values more
 Will always be nearer to the smaller value of Precision or Recall
 Reaches its best value at 1 and worst at 0
 
-img4
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img4.png)
 
 A more general F score, that uses a positive real factor β, where β is chosen such that recall is considered β times as important as precision, is:
 
-img8
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img8.png)
 ```python
 # tensorflow /keras
 def F_Measure(y_true, y_pred):
@@ -267,11 +267,11 @@ f1_score(y_true, y_pred, average='macro')
 Graphical plot that illustrates the diagnostic ability of a binary classifier as its discrimination threshold is varied.
 Plot is created by plotting the true positive rate (recall, sensitivity) against the false positive rate (FPR) at various thresholds. 
 
-img9
-img10
-img11
-img12
-img13
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img9.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img10.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img11.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img12.png)
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img13.png)
 
 curnves are usually drawn after full training. 
 (A more detailed version of this in Segmentation Metrics section in same repo)*
@@ -307,19 +307,21 @@ One of the most widely used metrics for evaluation of binary classifier
 Aggregate measure of performance across all classification thresholds
 “AUC of a classifier is equal to the probability that the classifier will rank a randomly chosen positive example higher than a randomly chosen negative example.” 
 
-img14
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img14.png)
 
 AUC represents the probability that a random positive example is positioned to the right of a random negative example.
 AUC ranges from 0 to 1.
 AUC is classification-threshold-invariant
 
-img15
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img15.png)
+
 Look at ROC curve. (A more detailed version of this in Segmentation Metrics section in same repo)*
 ### Precision Recall Curve
 A precision-recall curve is a plot of the precision (y-axis) and the recall (x-axis) for different thresholds, much like the ROC curve.
 Precision-Recall curves should be used when there is a moderate to large class imbalance.
 
-img16
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img16.png)
+
 (A more detailed version of this in Segmentation Metrics section in same repo)*
 ```python
 # a more detailed version of this in Segmentation Metrics section in same repo
@@ -355,15 +357,15 @@ for j in range(num_class):
 ### Intersection over Union (IOU) (Jaccard Index)
 The Intersection over Union (IoU) metric, also referred to as the Jaccard index, is essentially a method to quantify the percent overlap between the target mask and our prediction output. This metric is closely related to the Dice coefficient which is often used as a loss function during training.
 
-img17
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img17.png)
 
 The intersection (A∩B) is comprised of the pixels found in both the prediction mask and the ground truth mask, whereas the union (A∪B) is simply comprised of all pixels found in either the prediction or target mask.
 
-img 18
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img18.png)
 
 For multi-classes calculate the IoU score for each class separately, average over all classes to provide a global, mean IoU score of semantic segmentation
 
-img19
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img19.png)
 
 ```python
 def mean_iou(y_true, y_pred, smooth=1):
@@ -504,7 +506,7 @@ model.compile(optimizer=Nadam(), loss=LOSS, metrics=strict_iou)
 ## Dice Coefficient
 Dice coefficient, which is essentially a measure of overlap between two samples. This measure ranges from 0 to 1 where a Dice coefficient of 1 denotes perfect and complete overlap. The Dice coefficient was originally developed for binary data, and can be calculated as:
 
-img20
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img20.png)
 
 where |A∩B| represents the common elements between sets A and B, and |A| represents the number of elements in set A (and likewise for set B).
 For details: (here)[https://www.jeremyjordan.me/semantic-segmentation/#loss]
@@ -533,7 +535,7 @@ def dice_coef(y_true, y_pred, smooth=2):
 ```
 ## Pixel Accuracy
 One alternative method of evaluating semantic segmentation is only to report the percentage of correctly labeled pixels in the image. The precision of the pixel is often recorded both individually and globally for each class.
-img21
+![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img21.png)
 This metric is also inaccurate if the class representation is small in the picture, as the measure will be biased towards reporting how well you identify negative case (i.e., where the class is not present).
 
 ## Precision, Recall and F1-Measure
