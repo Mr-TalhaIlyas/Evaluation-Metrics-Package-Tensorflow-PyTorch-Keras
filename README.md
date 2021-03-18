@@ -81,17 +81,21 @@ model.compile(loss=LOSS_FUNCTION, optimizer=Adam(), metrics=['accuracy', Top_K])
 A table used to describe the performance of a classification model on a test data
 Allows easy identification of confusion between classes
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img5.png)
+
 Class 1 : Positive
 Class 2 : Negative
+
 Positive (P) : Observation is positive (for example: is an apple).
 Negative (N) : Observation is not positive (for example: is not an apple).
 True Positive (TP) : Observation is positive, and is predicted to be positive.
 False Negative (FN) : Observation is positive, but is predicted negative.
 True Negative (TN) : Observation is negative, and is predicted to be negative.
 False Positive (FP) : Observation is negative, but is predicted positive.
+
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img6.png)
 
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img7.png)
+
 Assumes equal cost for both kinds of errors
 Does not perform well with imbalanced data 
 For this you can define a `callback` in tensorflow so that the confusion matrix is logged in you plotting pane or in the tensorboard after every epoch
@@ -273,8 +277,7 @@ Plot is created by plotting the true positive rate (recall, sensitivity) against
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img12.png)
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img13.png)
 
-curnves are usually drawn after full training. 
-(A more detailed version of this in Segmentation Metrics section in same repo)*
+curnves are usually drawn after full training. (A more detailed version of this in **Segmentation Metrics** section in same repo)*
 ```python
 # a more detailed version of this in Segmentation Metrics section in same repo
 from sklearn.metrics import roc_curve, auc
@@ -310,8 +313,7 @@ Aggregate measure of performance across all classification thresholds
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img14.png)
 
 AUC represents the probability that a random positive example is positioned to the right of a random negative example.
-AUC ranges from 0 to 1.
-AUC is classification-threshold-invariant
+AUC ranges from 0 to 1, also AUC is classification-threshold-invariant
 
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img15.png)
 
@@ -322,7 +324,7 @@ Precision-Recall curves should be used when there is a moderate to large class i
 
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img16.png)
 
-(A more detailed version of this in Segmentation Metrics section in same repo)*
+(A more detailed version of this in **Segmentation Metrics** section in same repo)*
 ```python
 # a more detailed version of this in Segmentation Metrics section in same repo
 from sklearn.metrics import precision_recall_curve
@@ -536,6 +538,7 @@ def dice_coef(y_true, y_pred, smooth=2):
 ## Pixel Accuracy
 One alternative method of evaluating semantic segmentation is only to report the percentage of correctly labeled pixels in the image. The precision of the pixel is often recorded both individually and globally for each class.
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img21.png)
+
 This metric is also inaccurate if the class representation is small in the picture, as the measure will be biased towards reporting how well you identify negative case (i.e., where the class is not present).
 
 ## Precision, Recall and F1-Measure
