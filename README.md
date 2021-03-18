@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?&style=for-the-badge&logo=PyTorch&logoColor=white" /> <img alt="Keras" src="https://img.shields.io/badge/Keras%20-%23D00000.svg?&style=for-the-badge&logo=Keras&logoColor=white"/> <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow%20-%23FF6F00.svg?&style=for-the-badge&logo=TensorFlow&logoColor=white" /> <img alt="NumPy" src="https://img.shields.io/badge/numpy%20-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
 
-# Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras
+# Machine-Learning-Evaluation-Metrics-Package-Tensorflow-PyTorch-Keras
 An significant aspect of a project is testing the machine learning algorithm. If you evaluate using an index, the model could offer satisfactory results. But, if you evaluate against other indicators such as logarithmic loss or some other such measure, you may have bad results. Most commonly we use classification precision to calculate our model's efficiency, but it is not adequate to really assess our model. In this repo, various forms of metrics for different types of models/applications are covered.
 
  * **Classification**
