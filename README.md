@@ -7,11 +7,11 @@ An significant aspect of a project is testing the machine learning algorithm. If
  * [**Classification**](#Classification)
    1. [Classification Accuracy](#Classification-Accuracy)
    4. [Confusion matrix](#confusion-matrix)
-   5. [Precision and Recall](#)
-   6. [F-measure](#)
-   7. [Receiver Operating Characteristic (ROC)](#)
-   8. [Area Under Curve (AUC)](#)
-   9. [Precision Recall Curve](#)
+   5. [Precision and Recall](#precision-recall)
+   6. [F-measure](#f-measure)
+   7. [Receiver Operating Characteristic (ROC)](#ROC)
+   8. [Area Under Curve (AUC)](#AUC)
+   9. [Precision Recall Curve](#precision-recall-curve)
  * [**Segmentation**](#)
    1. [Intersection over Union (IOU)](#)
    2. [Dice coefficient](#)
@@ -80,7 +80,7 @@ Top_K = tf.keras.metrics.TopKCategoricalAccuracy(k=top_k)
 model.compile(loss=LOSS_FUNCTION, optimizer=Adam(), metrics=['accuracy', Top_K])
 ```
 
-### Confusion Matrix
+### <a name="confusion-matrix">Confusion Matrix</a>
 A table used to describe the performance of a classification model on a test data
 Allows easy identification of confusion between classes
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img5.png)
