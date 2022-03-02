@@ -270,7 +270,7 @@ y_true = [0, 1, 2, 0, 1, 2]
 y_pred = [0, 2, 1, 0, 0, 1]
 f1_score(y_true, y_pred, average='macro')
 ```
-### <a name="ROC-Curve">ROC Curve</a>
+### <a name="ROC">Receiver Operating Characteristic (ROC)</a>
 Graphical plot that illustrates the diagnostic ability of a binary classifier as its discrimination threshold is varied.
 Plot is created by plotting the true positive rate (recall, sensitivity) against the false positive rate (FPR) at various thresholds. 
 
@@ -321,7 +321,8 @@ AUC ranges from 0 to 1, also AUC is classification-threshold-invariant
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img15.png)
 
 Look at ROC curve. (A more detailed version of this in Segmentation Metrics section in same repo)*
-### Precision Recall Curve
+
+### <a name="precision-recall-curve">Precision Recall Curve</a>
 A precision-recall curve is a plot of the precision (y-axis) and the recall (x-axis) for different thresholds, much like the ROC curve.
 Precision-Recall curves should be used when there is a moderate to large class imbalance.
 
