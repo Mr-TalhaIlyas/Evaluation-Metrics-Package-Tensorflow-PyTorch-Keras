@@ -18,7 +18,7 @@ An significant aspect of a project is testing the machine learning algorithm. If
    3. Pixel Accuracy
    4. Precision and Recall
    5. Confusion matrix
-   6. Receiver Operating Characteristic (ROC)
+   6. [Receiver Operating Characteristic](#ROC-Curve)
    7. Area Under Curve (AUC)
  * **Object Detection** 
    1. Average Precision (Pascal)
@@ -270,7 +270,7 @@ y_true = [0, 1, 2, 0, 1, 2]
 y_pred = [0, 2, 1, 0, 0, 1]
 f1_score(y_true, y_pred, average='macro')
 ```
-### ROC Curve
+### <a name="ROC-Curve">ROC Curve</a>
 Graphical plot that illustrates the diagnostic ability of a binary classifier as its discrimination threshold is varied.
 Plot is created by plotting the true positive rate (recall, sensitivity) against the false positive rate (FPR) at various thresholds. 
 
