@@ -5,19 +5,19 @@
 An significant aspect of a project is testing the machine learning algorithm. If you evaluate using an index, the model could offer satisfactory results. But, if you evaluate against other indicators such as logarithmic loss or some other such measure, you may have bad results. Most commonly we use classification precision to calculate our model's efficiency, but it is not adequate to really assess our model. In this repo, various forms of metrics for different types of models/applications are covered.
 
  * **Classification**
-   1. Classification Accuracy
-   4. Confusion matrix
-   5. Precision and Recall
-   6. F-measure
-   7. Receiver Operating Characteristic (ROC)
-   8. Area Under Curve (AUC)
-   9. Precision Recall Curve
- * **Segmentation** 
-   1. Intersection over Union (IOU)
-   2. Dice coefficient
-   3. Pixel Accuracy
-   4. Precision and Recall
-   5. Confusion matrix
+   1. [Classification Accuracy]
+   4. [Confusion matrix]
+   5. [Precision and Recall]
+   6. [F-measure]
+   7. [Receiver Operating Characteristic (ROC)]
+   8. [Area Under Curve (AUC)]
+   9. [Precision Recall Curve]
+ * [**Segmentation**]
+   1. [Intersection over Union (IOU)]
+   2. [Dice coefficient]
+   3. [Pixel Accuracy]
+   4. [Precision and Recall]
+   5. [Confusion matrix]
    6. [Receiver Operating Characteristic](#ROC-Curve)
    7. Area Under Curve (AUC)
  * **Object Detection** 
