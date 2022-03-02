@@ -199,7 +199,7 @@ y_true = [2, 0, 2, 2, 0, 1]
 y_pred = [0, 0, 2, 2, 0, 2]
 confusion_matrix(y_true, y_pred)
 ```
-### Precision and Recall
+### <a name="precision-recall">Precision and Recall</a>
 **Precision** effectively describes the purity of our positive detections relative to the ground truth. How many of these things were actually annotated in the ground truth of all the items we predicted in a given picture.
 Precision: Total number of correctly classified positive examples divided by the total number of predicted positive examples
 
@@ -239,7 +239,7 @@ from sklearn.metrics import precision_recall_curve
 
 precision, recall, _ = precision_recall_curve(y_true.ravel(), y_pred.ravel())# ravel is just flattening the arrays
 ```
-### F-Measure
+### <a name="f-measure">F-Measure</a>
 A measure that combines precision and recall
 Harmonic mean of precision and recall 
 Punishes the extreme values more
@@ -308,7 +308,7 @@ for i in range(num_class):
     plt.ylabel('True Positive Rate')
     plt.legend(loc='lower right');
 ```
-### Aread Under Curve
+### <a name="AUC">Aread Under Curve</a>
 One of the most widely used metrics for evaluation of binary classifier
 Aggregate measure of performance across all classification thresholds
 “AUC of a classifier is equal to the probability that the classifier will rank a randomly chosen positive example higher than a randomly chosen negative example.” 
