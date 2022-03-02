@@ -12,7 +12,7 @@ An significant aspect of a project is testing the machine learning algorithm. If
    7. [Receiver Operating Characteristic (ROC)](#ROC)
    8. [Area Under Curve (AUC)](#AUC)
    9. [Precision Recall Curve](#precision-recall-curve)
- * [**Segmentation**](#)
+ * [**Segmentation**](#segmentation)
    1. [Intersection over Union (IOU)](#)
    2. [Dice coefficient](#)
    3. [Pixel Accuracy](#)
@@ -358,7 +358,7 @@ for j in range(num_class):
     plt.legend(loc='lower left');
 ```
 
-## Semantic Segmentation
+## <a name="segmentation">Semantic Segmentation</a>
 
 ### Intersection over Union (IOU) (Jaccard Index)
 The Intersection over Union (IoU) metric, also referred to as the Jaccard index, is essentially a method to quantify the percent overlap between the target mask and our prediction output. This metric is closely related to the Dice coefficient which is often used as a loss function during training.
