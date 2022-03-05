@@ -13,13 +13,13 @@ An significant aspect of a project is testing the machine learning algorithm. If
    8. [Area Under Curve (AUC)](#AUC)
    9. [Precision Recall Curve](#precision-recall-curve)
  * [**Segmentation**](#segmentation)
-   1. [Intersection over Union (IOU)](#)
-   2. [Dice coefficient](#)
-   3. [Pixel Accuracy](#)
-   4. [Precision and Recall](#)
-   5. [Confusion matrix](#)
+   1. [Intersection over Union (IOU)](#iou)
+   2. [Dice coefficient](#dice-coeff)
+   3. [Pixel Accuracy](#pixel-acc)
+   4. [Precision and Recall](#precision-and-recall)
+   5. [Confusion matrix](#conf-mat)
    6. [Receiver Operating Characteristic](#ROC-Curve)
-   7. Area Under Curve (AUC)
+   7. [Area Under Curve (AUC)](#auc-curve)
  * **Object Detection** 
    1. Average Precision (Pascal)
    2. Average Precision (COCO)
@@ -539,7 +539,7 @@ def dice_coef(y_true, y_pred, smooth=2):
     dice = K.mean((2. * intersection + smooth)/(union + smooth), axis=[0])
     return dice
 ```
-## Pixel Accuracy
+## <a name=pixel-acc>Pixel Accuracy</a>
 One alternative method of evaluating semantic segmentation is only to report the percentage of correctly labeled pixels in the image. The precision of the pixel is often recorded both individually and globally for each class.
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img21.png)
 
