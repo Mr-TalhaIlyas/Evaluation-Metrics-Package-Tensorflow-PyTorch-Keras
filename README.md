@@ -509,10 +509,12 @@ then use like
 ```python
 model.compile(optimizer=Nadam(), loss=LOSS, metrics=strict_iou)
 ```
-## Dice Coefficient
+## <a name=dice-coeff>Dice Coefficient</a>
+
 Dice coefficient, which is essentially a measure of overlap between two samples. This measure ranges from 0 to 1 where a Dice coefficient of 1 denotes perfect and complete overlap. The Dice coefficient was originally developed for binary data, and can be calculated as:
 
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img20.png)
+
 
 where |A∩B| represents the common elements between sets A and B, and |A| represents the number of elements in set A (and likewise for set B).
 For details: (here)[https://www.jeremyjordan.me/semantic-segmentation/#loss]
