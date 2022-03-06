@@ -20,11 +20,11 @@ An significant aspect of a project is testing the machine learning algorithm. If
    5. [Confusion matrix](#conf-mat)
    6. [Receiver Operating Characteristic](#ROC-Curve)
    7. [Area Under Curve (AUC)](#auc-curve)
- * **Object Detection** 
-   1. Average Precision (Pascal)
-   2. Average Precision (COCO)
-   3. Confusion Matrix
-   4. PR Curve
+ * [**Object Detection**](#object-detection) 
+   1. [Average Precision (Pascal)](#app)
+   2. [Average Precision (COCO)](#apc)
+   3. [Confusion Matrix](#c-m)
+   4. [PR Curve](#pr-c)
 ## Necessary Imports
 ```python
 # for creating custom metrics
@@ -547,7 +547,7 @@ One alternative method of evaluating semantic segmentation is only to report the
 
 This metric is also inaccurate if the class representation is small in the picture, as the measure will be biased towards reporting how well you identify negative case (i.e., where the class is not present).
 
-## Precision, Recall and F1-Measure
+## <a name=precision-and-recall>Precision, Recall and F1-Measure</a>
 Same as explaind the **Classifiction** section. We do need to modify the function a little bit.
 ```python
 def recall_m(y_true, y_pred):
@@ -598,7 +598,7 @@ def F_Measure(precision, recall):
     return 2*((precision*recall)/(precision+recall+K.epsilon()))
     
 ```
-## Receiver Operator Characteristic (ROC) Curve
+## <a name=ROC-Curve>Receiver Operator Characteristic (ROC) Curve</a>
 The explaination is similar to as explained in **Classification** section.
 The modified code for segmentation model is as follows 
 **___Detailed Code__**
@@ -681,7 +681,7 @@ plt.title('ROC Curve')
 plt.legend(loc="lower right")
 plt.show()
 ```
-## Precision-Recall (PR) Curve
+## <a name=pr-curve>Precision-Recall (PR) Curve</a>
 Followed by `Data Process` Script (above) Continued*
 ```python
 #|||||||||||||||||||||||||||||||||||||||||||||||||Plotting Percision Recall Curves|||||||||||||||||||||||||||||||||||||||||||||||||
