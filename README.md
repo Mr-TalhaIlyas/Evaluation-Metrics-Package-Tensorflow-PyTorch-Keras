@@ -741,7 +741,7 @@ plt.title('Precision-Recall curve')
 plt.legend(lines, labels,loc="lower left")
 plt.show()
 ```
-## Confusion matrix
+## <a name=c-m>Confusion matrix</a>
 Followed by `Data Process` Script (above) Continued*
 ```python
 #|||||||||||||||||||||||||||||||||||||||||||||||||||||||Plotting  COnfusion matrix|||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -806,7 +806,7 @@ sm._A = []
 plt.colorbar(sm)
 plt.show() 
 ```
-## Object Detection
+## <a name=object-detection>Object Detection</a>
 
 ### Average Precision (PASCAL & COCO)
 A very good explaination for these metrics is given by [rafaelpadilla here](https://github.com/rafaelpadilla/Object-Detection-Metrics).
