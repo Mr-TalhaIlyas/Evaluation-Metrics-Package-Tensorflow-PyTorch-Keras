@@ -19,7 +19,6 @@ An significant aspect of a project is testing the machine learning algorithm. If
    4. [Precision and Recall](#precision-and-recall)
    5. [Confusion matrix](#conf-mat)
    6. [Receiver Operating Characteristic](#ROC-Curve)
-   7. [Area Under Curve (AUC)](#auc-curve)
  * [**Object Detection**](#object-detection) 
    1. [Average Precision (Pascal)](#app)
    2. [Average Precision (COCO)](#apc)
