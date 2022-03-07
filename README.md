@@ -359,7 +359,7 @@ for j in range(num_class):
 
 ## <a name="segmentation">Semantic Segmentation</a>
 
-### Intersection over Union (IOU) (Jaccard Index)
+### <a name=iou>Intersection over Union (IOU) (Jaccard Index)</a>
 The Intersection over Union (IoU) metric, also referred to as the Jaccard index, is essentially a method to quantify the percent overlap between the target mask and our prediction output. This metric is closely related to the Dice coefficient which is often used as a loss function during training.
 
 ![alt text](https://github.com/Mr-TalhaIlyas/Machine-Learning-Metrics-Package-Tensorflow-PyTorch-Keras/blob/main/screens/img17.png)
