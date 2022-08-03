@@ -4,8 +4,8 @@
 # Machine-Learning-Evaluation-Metrics-Package-Tensorflow-PyTorch-Keras
 An significant aspect of a project is testing the machine learning algorithm. If you evaluate using an index, the model could offer satisfactory results. But, if you evaluate against other indicators such as logarithmic loss or some other such measure, you may have bad results. Most commonly we use classification precision to calculate our model's efficiency, but it is not adequate to really assess our model. In this repo, various forms of metrics for different types of models/applications are covered.
 
-#### For [Loss-Functions-Package-Tensorflow-Keras-PyTorch](https://github.com/Mr-TalhaIlyas/Loss-Functions-Package-Tensorflow-Keras-PyTorch/blob/main/README.md)
-#### For [Loss-Functions-Package-Tensorflow-Keras-PyTorch](https://github.com/Mr-TalhaIlyas/Loss-Functions-Package-Tensorflow-Keras-PyTorch/blob/main/README.md)
+#### For [Loss-Functions-Package-Tensorflow-Keras-PyTorch](https://github.com/Mr-TalhaIlyas/Loss-Functions-Package-Tensorflow-Keras-PyTorch)
+#### For [Learning-Rate-Schedulers-Packege-Tensorflow-PyTorch-Keras](https://github.com/Mr-TalhaIlyas/Learning-Rate-Schedulers-Packege-Tensorflow-PyTorch-Keras)
 
  * [**Classification**](#Classification)
    1. [Classification Accuracy](#Classification-Accuracy)
